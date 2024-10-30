@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.db_connection import get_db1
-from getRaportDonatur.db_controller import get_raport_data
+from config.db_connection import get_db1
+from controller.getraportdonatur import get_raport_data
 
 router = APIRouter()
 

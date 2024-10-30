@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from getRaportDonatur.models import CorezDonatur, CorezTransaksiToday
+from models.getraportdonatur import CorezDonatur, CorezTransaksiToday
 from sqlalchemy import func
 
 def get_raport_data(db: Session, id_crm: str, waktu: int = None):

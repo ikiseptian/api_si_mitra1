@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from app.db_connection import get_db1
-from getListDonaturByIdDonatur.db_controller import get_transaction_group_by_donatur_detail
+from config.db_connection import get_db1
+from controller.getlistdonatur import get_transaction_group_by_donatur_detail
 
 router = APIRouter()
 

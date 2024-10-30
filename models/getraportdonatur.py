@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Date, Float
 from sqlalchemy.orm import relationship, foreign, remote
-from app.db_connection import Base
+from config.db_connection import Base
 
 class CorezDonatur1(Base):
     __tablename__ = 'corez_donatur'

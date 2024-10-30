@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from app.routes import router as app_campaign_router  # Campaign router
-from getLaporanBeasiswa.routes import router as laporan_beasiswa_router  # Laporan beasiswa router
-from getRaportDonatur.routes import router as raport_donatur_router  # Laporan beasiswa router
-from getRaport.routes import router as raport_router  # Laporan beasiswa router
-from getListDonaturByIdDonatur.routes import router as donaturbyiddonatur  # Laporan beasiswa router
+from routes.getlaporanbeasiswa import router as laporan_beasiswa_router  # Laporan beasiswa router
+from routes.getraportdonatur import router as raport_donatur_router  # Laporan beasiswa router
+from routes.getraport import router as raport_router  # Laporan beasiswa router
+from routes.getlistdonor import router as donaturbyiddonatur  # Laporan beasiswa router
 
 app = FastAPI()
 

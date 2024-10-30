@@ -2,7 +2,7 @@ import json
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
-from app.db_connection import get_db1, get_db2
+from config.db_connection import get_db1, get_db2
 from app.db_controller import (
     get_campaigns_from_db1,
     get_campaigns_from_db2,
