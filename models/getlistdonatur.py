@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import relationship
-from config.db_connection import Base
+from ..config.db_connection import Base
 
 class CorezTransaksiThisMonth1(Base):
     __tablename__ = 'corez_transaksi_thismonth'

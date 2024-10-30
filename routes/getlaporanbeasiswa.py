@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends
-from controller.getlaporanbeasiswa import get_laporan_beasiswa
+from ..controller.getlaporanbeasiswa import get_laporan_beasiswa
 
 router = APIRouter()
 

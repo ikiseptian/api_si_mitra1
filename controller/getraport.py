@@ -1,8 +1,8 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
-from models.getraportdonatur import (
+from ..models.getraport import (
     CorezDonatur1,
-    CorezTransaksiToday1,
+    CorezTransaksiToday,
     CorezTransaksiThisMonth,
     CorezTransaksiThisYear,
     CorezTransaksi,
@@ -22,7 +22,7 @@ def get_raport_zisco(db: Session, id_crm: str, waktu: int):
 
     # Switch case untuk memilih model dan tanggal
     if waktu == 1:
-        corez_model = CorezTransaksiToday1
+        corez_model = CorezTransaksiToday
         tgl = datetime.now().date()
     elif waktu == 2:
         corez_model = CorezTransaksiThisMonth
