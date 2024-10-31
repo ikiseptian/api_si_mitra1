@@ -1,7 +1,7 @@
 # controllers.py
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
-from ..models.setting_target import CorezTransaksiToday, CorezTransaksiThisMonth, SettingTarget
+from models.setting_target import CorezTransaksiToday, CorezTransaksiThisMonth, SettingTarget
 
 def get_transaction_achieve(db: Session, id_crm: int, waktu: int, growth_persentase: int):
     now = datetime.now()

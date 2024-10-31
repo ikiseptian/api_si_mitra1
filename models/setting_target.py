@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Date, Float
-from ..config.db_connection import Base
+from config.db_connection import Base
 
 # Definisikan model CorezTransaksiToday
 class CorezTransaksiToday(Base):

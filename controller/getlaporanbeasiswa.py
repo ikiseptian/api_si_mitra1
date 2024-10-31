@@ -1,5 +1,5 @@
 from fastapi import Depends
-from ..config.db_connection import get_db1, get_db2, get_db3
+from config.db_connection import get_db1, get_db2, get_db3
 from sqlalchemy import text
 
 def get_laporan_beasiswa(
@@ -67,10 +67,8 @@ def get_laporan_beasiswa(
                 "count_email": str(row.count_email)
             })
 
-        return {
-            "data": data_list
-        }
+        return data_list  # Mengembalikan langsung data_list
 
     except Exception as e:
         print(f"Error in get_laporan_beasiswa: {str(e)}")
-        return {"data": []}
+        return []

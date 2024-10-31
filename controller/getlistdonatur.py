@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from ..models.getlistdonatur import CorezTransaksiThisMonth1, CorezDonatur, SettingProgram
+from models.getlistdonatur import CorezTransaksiThisMonth1, CorezDonatur, SettingProgram
 from datetime import datetime
 
 def get_transaction_group_by_donatur_detail(db: Session, id_crm: int, id_donatur: int, page: int = 1, per_page: int = 10):

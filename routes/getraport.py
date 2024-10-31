@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from ..config.db_connection import get_db1
-from ..controller.getraport import get_raport_zisco
+from config.db_connection import get_db1
+from controller.getraport import get_raport_zisco
 
 router = APIRouter()
 
