@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
-from models.singledonaturModel import SingleDonatur
+from ..models.singledonaturModel import SingleDonatur
 import logging
 
 def get_single_donatur_info(db: Session, id_donatur: str):

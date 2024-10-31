@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from config.db_connection import get_db1
-from controller.karyawanController import get_karyawan_by_email
+from ..config.db_connection import get_db1
+from ..controller.karyawanController import get_karyawan_by_email
 import logging
 
 router = APIRouter()

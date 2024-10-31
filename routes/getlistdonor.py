@@ -3,8 +3,8 @@ from sqlalchemy.orm import Session
 from datetime import datetime
 
 # Ubah import ini sesuai dengan struktur folder Anda
-from config.db_connection import get_db1
-from controller.getlistdonatur import get_transaction_group_by_donatur_detail
+from ..config.db_connection import get_db1
+from ..controller.getlistdonatur import get_transaction_group_by_donatur_detail
 
 router = APIRouter()
 

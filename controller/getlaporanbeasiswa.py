@@ -1,5 +1,5 @@
 from fastapi import Depends
-from config.db_connection import get_db1, get_db2, get_db3
+from ..config.db_connection import get_db1, get_db2, get_db3
 from sqlalchemy import text
 
 def get_laporan_beasiswa(

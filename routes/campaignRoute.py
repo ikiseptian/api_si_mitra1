@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from config.db_connection import get_db1, get_db2
-from controller.campaignController import (
+from ..config.db_connection import get_db1, get_db2
+from ..controller.campaignController import (
     get_campaigns_from_db1,
     get_campaigns_from_db2,
     

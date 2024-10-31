@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from config.db_connection import get_db1
-from controller.transaksiController import get_detailed_transactions
+from ..config.db_connection import get_db1
+from ..controller.transaksiController import get_detailed_transactions
 import logging
 
 router = APIRouter()

@@ -1,6 +1,6 @@
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
-from models.getraport import (
+from ..models.getraport import (
     CorezDonatur1,
     CorezTransaksiToday,
     CorezTransaksiThisMonth,
